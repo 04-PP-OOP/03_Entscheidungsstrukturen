@@ -75,7 +75,10 @@ firstName = "Jane";
 job = "driver";  // .. fährt TAXI!
 job = "diver"; // .. taucht im Rhein!
 job = "artist"  // .. malt ein Bild!
-job = "pilot"  // 
+job = "pilot"  // .. macht etwas anderes.
+job = "teacher" // .. unterrichtet.
+job = "instructor" //  .. unterrichtet.
+
 
 switch (job) 
 {
@@ -88,9 +91,12 @@ switch (job)
     case "artist":
         console.log(firstName + " malt ein Bild.");
         break;
-            
-        
-        default: // hab ich an alles gedacht??? Nein!
+    case "teacher":
+    case "instructor":
+        console.log(firstName + " unterrichtet.");
+        break;
+        // für alle nicht bezeichneten Fälle ...
+        default: 
         console.log(firstName + " macht etwas anderes.");
         break;
 }
