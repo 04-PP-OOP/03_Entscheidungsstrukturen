@@ -70,6 +70,7 @@ else
 
 /****** Fallunterscheidung / CASE|SWITCH 1 ******/
 
+/*
 let firstName, job;
 firstName = "Jane";
 job = "driver";  // .. fährt TAXI!
@@ -96,7 +97,24 @@ switch (job)
         console.log(firstName + " unterrichtet.");
         break;
         // für alle nicht bezeichneten Fälle ...
-        default: 
+    default: 
         console.log(firstName + " macht etwas anderes.");
+        break;
+}
+*/
+
+/********  Fallunterscheidung / CASE|SWITCH 2 *******/
+
+let a = 1;
+
+switch (true) {
+    case (a == 1):
+        console.log("a ist 1");
+        break;
+    case (a == 2):
+        console.log("a ist 2");
+        break;
+    default:
+        console.log("a hat einen anderen Wert.");
         break;
 }
