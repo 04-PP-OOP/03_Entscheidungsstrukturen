@@ -1,5 +1,6 @@
 // Entscheidungsstrukturen | control structures
 
+/*
 // Deklaration
 let ageJohn, ageMark;
 let isJohnOlder, isJohnEqual;
@@ -17,6 +18,7 @@ console.log("ageMark: " + ageMark);
 console.log("isJohnOlder: " + isJohnOlder);
 console.log("isJohnEqual: " + isJohnEqual);
 console.log("-------------------");
+*/
 
 /************ IF  ************/
 // alternativlos (TINA)
@@ -63,4 +65,32 @@ else
 */
 
 /************  Ternäre Schreibweise ************/
-console.log((isJohnOlder) ? "John is older" : "Mark is older");
+//console.log((isJohnOlder) ? "John is older" : "Mark is older");
+
+
+/****** Fallunterscheidung / CASE|SWITCH 1 ******/
+
+let firstName, job;
+firstName = "Jane";
+job = "driver";  // .. fährt TAXI!
+job = "diver"; // .. taucht im Rhein!
+job = "artist"  // .. malt ein Bild!
+job = "pilot"  // 
+
+switch (job) 
+{
+    case "driver":
+        console.log(firstName + " fährt TAXI.");
+        break;
+    case "diver":
+        console.log(firstName + " taucht im Rhein.");
+        break;
+    case "artist":
+        console.log(firstName + " malt ein Bild.");
+        break;
+            
+        
+        default: // hab ich an alles gedacht??? Nein!
+        console.log(firstName + " macht etwas anderes.");
+        break;
+}
